@@ -10,7 +10,7 @@ export const tabtraySlice = createSlice({
     tray: [
       {
         id: 0,
-        title: "Quick Start Guide",
+        title: "Помощь",
         message: "",
         Icon: help,
         isMinimized: false,

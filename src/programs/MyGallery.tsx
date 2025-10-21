@@ -73,7 +73,7 @@ const MyGallery = ({ id }: Props) => {
                 height={32}
                 width={32}
               />
-              <p className={styles.title_text}>{"Picture Tasks"}</p>
+              <p className={styles.title_text}>{"Галерея"}</p>
             </div>
             <div>
               <Image
@@ -93,8 +93,8 @@ const MyGallery = ({ id }: Props) => {
                       <div style={{ fontWeight: "700" }}>{e.title}</div>
                       <div>{e.desc}</div>
                       <div>
-                        <div>Location: {e.location || "Not available"}</div>
-                        <div>Date: {e.date || "Not available"}</div>
+                        <div>Место: {e.location || "Not available"}</div>
+                        <div>Время: {e.date || "Not available"}</div>
                       </div>
                     </div>
                   );

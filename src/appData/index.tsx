@@ -127,7 +127,7 @@ export const AppDirectory: Map<number, Tab> = new Map([
     0,
     {
       id: 0,
-      title: "Welcome To My Website - Quick Start Guide",
+      title: "Помощь",
       message: "",
       Icon: help,
       isMinimized: false,
@@ -243,7 +243,7 @@ export const WorkAccordionTitles = [
   WorkType.SCHOOL,
 ];
 
-export const GalleryAccordionTitles = ["Details"];
+export const GalleryAccordionTitles = ["Детали"];
 
 export const WorkData = [
   // {
@@ -555,10 +555,10 @@ export const WorkAccordionContent = [
 export const PhotoCollection = [
   {
     id: 0,
-    title: "Gallery Unavailable",
-    location: "",
-    desc: "Personal photography has been removed.",
-    date: "",
+    title: "Тут есть что-то интересное",
+    location: "Дом",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dicta.",
+    date: "Сегодня",
     img: pictureicon,
   },
 ] as GalleryImage[];

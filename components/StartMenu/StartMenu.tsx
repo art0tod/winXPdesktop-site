@@ -81,7 +81,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
             textShadow: "1px 1px #000000",
           }}
         >
-          Wei Pin&apos;s PC
+          Пользователь
         </p>
       </div>
       <hr className={styles.orangehr} />
@@ -89,49 +89,49 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
         <div className={styles.leftmenu}>
           <div>
             <StartMenuItem
-              title="Internet"
+              title="Интернет"
               subtitle="Internet Explorer"
               icon={ie}
               type={1}
             />
             <StartMenuItem
               onClick={() => handleRunApp(1)}
-              title="E-mail"
-              subtitle="Drop me a message!"
+              title="Почта"
+              subtitle="E-mail"
               icon={outlook}
               type={1}
             />
             <hr className={styles.greyhr} />
             <StartMenuItem
               onClick={handleOpenResume}
-              title="My Resume"
+              title="Adobe Acrobat"
               icon={pdf}
               type={2}
             />
-            <StartMenuItem
+            {/* <StartMenuItem
               onClick={handleOpenGitHub}
               title="My Github"
               icon={github}
               type={2}
-            />
-            <StartMenuItem
+            /> */}
+            {/* <StartMenuItem
               onClick={handleOpenLinkedin}
               title="My Linkedin"
               icon={linkedin}
               type={2}
-            />
-            <StartMenuItem
+            /> */}
+            {/* <StartMenuItem
               title="My Work"
               onClick={() => handleRunApp(2)}
               icon={cmd}
               type={2}
-            />
+            /> */}
             <StartMenuItem title="Paint" icon={paint} type={2} />
           </div>
           <div>
             <hr className={styles.greyhr} />
             <div className={styles.allprograms}>
-              All Programs
+              Все программы
               <Image
                 height={15}
                 width={15}
@@ -143,28 +143,28 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
           </div>
         </div>
         <div className={styles.rightmenu}>
-          <StartMenuItem title="My Documents" icon={folder} type={3} />
+          <StartMenuItem title="Мои Документы" icon={folder} type={3} />
           <StartMenuItem
-            title="My Recent Documents"
+            title="Мои последние документы"
             icon={recentdoc}
             type={3}
             expanded={true}
           />
-          <StartMenuItem title="My Pictures" icon={folder_image} type={3} />
-          <StartMenuItem title="My Music" icon={folder_music} type={3} />
-          <StartMenuItem title="My Computer" icon={mycomputer} type={3} />
+          <StartMenuItem title="Мои Фото" icon={folder_image} type={3} />
+          <StartMenuItem title="Моя Музыка" icon={folder_music} type={3} />
+          <StartMenuItem title="Мой компьютер" icon={mycomputer} type={3} />
           <hr className={styles.bluehr} />
-          <StartMenuItem title="Control Panel" icon={clipboard} type={4} />
-          <StartMenuItem
+          <StartMenuItem title="Панель управления" icon={clipboard} type={4} />
+          {/* <StartMenuItem
             title="Set Program Access and Defaults"
             icon={defaultprog}
             type={4}
-          />
-          <StartMenuItem title="Printer and Faxes" icon={printerfax} type={4} />
+          /> */}
+          <StartMenuItem title="Принтер и факс" icon={printerfax} type={4} />
           <hr className={styles.bluehr} />
-          <StartMenuItem title="Help and Support" icon={help} type={4} />
-          <StartMenuItem title="Search" icon={search} type={4} />
-          <StartMenuItem title="Run..." icon={run} type={4} />
+          <StartMenuItem title="Помощь" icon={help} type={4} />
+          <StartMenuItem title="Поиск" icon={search} type={4} />
+          <StartMenuItem title="Запустить" icon={run} type={4} />
         </div>
       </div>
       <div className={styles.menubtmbar}>
@@ -176,7 +176,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
             className={styles.systemBtnIcon}
             src={logoff.src}
           />
-          Log Off
+          Выйти
         </div>
         <div className={styles.systemBtn}>
           <Image
@@ -186,7 +186,7 @@ const StartMenu = ({ menuControl }: StartMenuProps) => {
             className={styles.systemBtnIcon}
             src={shutdown.src}
           />
-          Turn Off Computer
+          Выключить компьютер
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ const Outlook = () => {
     if (!from || !subject || !message) {
       return;
     }
-    
+
     try {
       await axios({
         method: "post",
@@ -50,7 +50,7 @@ const Outlook = () => {
           text: "From: " + from + "\nMessage: " + message,
         },
       });
-      
+
       // Success handling
       const newTab = {
         ...AppDirectory.get(7),
@@ -60,7 +60,7 @@ const Outlook = () => {
         message: "Your message has been sent! I will get back to you soon!",
       };
       store.dispatch(addTab(newTab));
-      
+
       // Clear form
       setFrom("");
       setSubject("");

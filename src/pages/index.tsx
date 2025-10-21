@@ -52,8 +52,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Wei Pin&apos;s Personal Website - Home Page</title>
-        <meta name="description" content="My Personal Space" />
+        <title>Windows XP</title>
+        <meta name="description" content="PC" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
@@ -68,28 +68,28 @@ export default function Home() {
           <DesktopIcon
             appID={1}
             doubleClick={() => void 0}
-            title="My Computer"
+            title="Мой компьютер"
             img={mycomputer}
           />
           <DesktopIcon
             appID={2}
             doubleClick={() => void 0}
-            title="Recycling Bin"
+            title="Корзина"
             img={bin}
           />
           <DesktopIcon
             appID={3}
             doubleClick={handleOpenResume}
-            title="My Resume"
+            title="Adobe Acrobat"
             img={pdf}
           />
-          <DesktopIcon
+          {/* <DesktopIcon
             appID={4}
             doubleClick={handleOpenLinkedin}
             title="My LinkedIn"
             img={linkedin}
-          />
-          <DesktopIcon
+          /> */}
+          {/* <DesktopIcon
             appID={5}
             doubleClick={handleOpenGitHub}
             title="My Github"
@@ -100,14 +100,14 @@ export default function Home() {
             doubleClick={() => handleRunApp(2)}
             title="My Work"
             img={cmd}
-          />
+          /> */}
 
-          <DesktopIcon
+          {/* <DesktopIcon
             appID={7}
             doubleClick={() => void 0}
             title="My Hobbies"
             img={solitare}
-          />
+          /> */}
           {Tabs.map((tab, index) => {
             return tab.isMinimized ? (
               <></>
